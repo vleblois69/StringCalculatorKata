@@ -20,5 +20,13 @@ namespace SolidExercices.Tests
             var result = calculator.Calculate("4,5-1,5");
             Check.That(result).IsEqualTo(3.0);
         }
+
+        [Test]
+        public void CalculateAProduct()
+        {
+            var calculator = new Calculator();
+            var result = calculator.Calculate("2*3,2");
+            Check.That(result).IsEqualTo(6.4);
+        }
     }
 }
