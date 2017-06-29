@@ -51,7 +51,7 @@
     <Compile Include="CalculatorTrainer.cs" />
     <Compile Include="IOperationsRepository.cs" />
     <Compile Include="Operations.cs" />
-    <Compile Include="GeneratedOperations.cs" />
+    <Compile Include="DataAccess\GeneratedOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
