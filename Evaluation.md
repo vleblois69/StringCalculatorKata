@@ -27,5 +27,5 @@ Q4) Le problème avec cette classe est que les opérations sont écrites en dure
 
 Q5) Le principe appliqué ici est celui de Responsabilité unique.
 
-Q6)
+Q6) Le principe appliqué est celui d'inversion de dépendances.
  
