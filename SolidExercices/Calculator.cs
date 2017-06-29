@@ -7,11 +7,23 @@ namespace SolidExercices
     {
         public double Calculate(string operation)
         {
-            string[] chiffres = operation.Split('+');
             double resultat = 0;
-            foreach (string chiffre in chiffres)
+            if (operation.Contains('+'))
             {
-                resultat += Convert.ToDouble(chiffre);
+                string[] chiffres = operation.Split('+');
+                foreach (string chiffre in chiffres)
+                {
+                    resultat += Convert.ToDouble(chiffre);
+                }
+            }
+            else if (operation.Contains('-'))
+            {
+                string[] chiffres = operation.Split('-');
+                resultat = Convert.ToDouble(chiffres[0]);
+                for(int i = 1; i < chiffres.Length; i++)
+                {
+                    resultat -= Convert.ToDouble(chiffres[i]);
+                }
             }
             return resultat;
         }
