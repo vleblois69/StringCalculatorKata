@@ -20,7 +20,7 @@ namespace SolidExercices
                     }
                     catch (Exception e)
                     {
-                            throw new Exception("Erreur lors du calcul : impossible d'effectuer le calcul. (Exception " + e + " )");
+                            throw new ArgumentException("Erreur lors du calcul : impossible d'effectuer le calcul. (Exception " + e + " )");
                     }
                 }
             }
