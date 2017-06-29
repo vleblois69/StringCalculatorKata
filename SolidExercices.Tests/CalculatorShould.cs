@@ -39,7 +39,7 @@ namespace SolidExercices.Tests
         }
 
         [Test]
-        public void CalculateWithLetters()
+        public void NotCalculateWithLetters()
         {
             var calculator = new Calculator();
             Check.ThatCode(() => calculator.Calculate("habd+kofjgk")).Throws<Exception>();
