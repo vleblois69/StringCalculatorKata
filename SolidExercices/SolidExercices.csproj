@@ -50,7 +50,7 @@
     <Compile Include="Calculator.cs" />
     <Compile Include="CalculatorTrainer.cs" />
     <Compile Include="Operations.cs" />
-    <Compile Include="OperationsGenerator.cs" />
+    <Compile Include="G.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
