@@ -25,7 +25,7 @@ Q3) Le principe appliqué est celui de Responsabilité unique.
 
 Q4) Le problème avec cette classe est que les opérations sont écrites en dures, il n'y a donc pas de souplesse, on voudrait pouvoir tester n'importe quelle opération.
 
-Q5)
+Q5) Le principe appliqué ici est celui de Responsabilité unique.
 
 Q6)
  
