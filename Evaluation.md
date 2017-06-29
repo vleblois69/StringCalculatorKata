@@ -19,7 +19,7 @@ Réponses aux questions posées
 
 Q1) Pour éviter de faire des if / else on peut créer un dictionnaire dont les clés seraient les opérateurs (+,-,..) et les valeurs les fonctions à éxecuter. Il faut donc aussi créer une fonction par opération.
 
-Q2)
+Q2) C'est le concept d'implémentation qui est mise en oeuvre ici.
 
 Q3) Le principe appliqué est celui de Responsabilité unique.
 
