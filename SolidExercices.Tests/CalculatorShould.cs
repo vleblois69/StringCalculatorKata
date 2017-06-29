@@ -1,4 +1,5 @@
-﻿using NFluent;
+﻿using System;
+using NFluent;
 using NUnit.Framework;
 
 namespace SolidExercices.Tests
@@ -35,6 +36,13 @@ namespace SolidExercices.Tests
             var calculator = new Calculator();
             var result = calculator.Calculate("6/3");
             Check.That(result).IsEqualTo(2m);
+        }
+
+        [Test]
+        public void CalculateWithLetters()
+        {
+            var calculator = new Calculator();
+            Check.ThatCode(() => calculator.Calculate("habd+kofjgk")).Throws<Exception>();
         }
     }
 }

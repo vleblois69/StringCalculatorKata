@@ -48,7 +48,7 @@ namespace SolidExercices
             }
             catch (Exception e)
             {
-                Console.WriteLine("Erreur lors du calcul : impossible d'effectuer le calcul. (Exception " + e + " )");
+                throw new Exception("Erreur lors du calcul : impossible d'effectuer le calcul. (Exception " + e + " )");
             }
             return resultat;
         }
