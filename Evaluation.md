@@ -23,7 +23,7 @@ Q2) C'est le concept d'implémentation qui est mise en oeuvre ici, c'est à dire
 
 Q3) Le principe appliqué est celui de Responsabilité unique.
 
-Q4)
+Q4) Le problème avec cette classe est que les opérations sont écrites en dures, il n'y a donc pas de souplesse, on voudrait pouvoir tester n'importe quelle opération.
 
 Q5)
 
