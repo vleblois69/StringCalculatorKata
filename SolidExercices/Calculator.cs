@@ -14,7 +14,14 @@ namespace SolidExercices
             {
                 if (operation.Contains(opeCourante.Key))
                 {
+                    try 
+                    {
                     return opeCourante.Value(operation);
+                    }
+                    catch (Exception e)
+                    {
+                            throw new Exception("Erreur lors du calcul : impossible d'effectuer le calcul. (Exception " + e + " )");
+                    }
                 }
             }
             return 0;

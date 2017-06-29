@@ -10,8 +10,6 @@ namespace SolidExercices
     {
         public static decimal addition(string operation)
         {
-            try
-            {
                 decimal resultat = 0;
                 string[] chiffres = operation.Split('+');
                 foreach (string chiffre in chiffres)
@@ -19,18 +17,11 @@ namespace SolidExercices
                     resultat += Convert.ToDecimal(chiffre);
                 }
                 return resultat;
-            }
-            catch (Exception e)
-            {
-                throw new Exception("Erreur lors du calcul : impossible d'effectuer le calcul. (Exception " + e + " )");
-            }
-
         }
 
         public static decimal soustraction(string operation)
         {
-            try
-            {
+            
                 string[] chiffres = operation.Split('-');
                 decimal resultat = Convert.ToDecimal(chiffres[0]);
                 for (int i = 1; i < chiffres.Length; i++)
@@ -38,18 +29,13 @@ namespace SolidExercices
                     resultat -= Convert.ToDecimal(chiffres[i]);
                 }
                 return resultat;
-            }
-            catch (Exception e)
-            {
-                throw new Exception("Erreur lors du calcul : impossible d'effectuer le calcul. (Exception " + e + " )");
-            }
+            
 
         }
 
         public static decimal multiplication(string operation)
         {
-            try
-            {
+            
                 string[] chiffres = operation.Split('*');
                 decimal resultat = Convert.ToDecimal(chiffres[0]);
                 for (int i = 1; i < chiffres.Length; i++)
@@ -57,18 +43,13 @@ namespace SolidExercices
                     resultat *= Convert.ToDecimal(chiffres[i]);
                 }
                 return resultat;
-            }
-            catch (Exception e)
-            {
-                throw new Exception("Erreur lors du calcul : impossible d'effectuer le calcul. (Exception " + e + " )");
-            }
+            
 
         }
 
         public static decimal division(string operation)
         {
-            try
-            {
+            
                 string[] chiffres = operation.Split('/');
                 decimal resultat = Convert.ToDecimal(chiffres[0]);
                 for (int i = 1; i < chiffres.Length; i++)
@@ -76,11 +57,7 @@ namespace SolidExercices
                     resultat /= Convert.ToDecimal(chiffres[i]);
                 }
                 return resultat;
-            }
-            catch (Exception e)
-            {
-                throw new Exception("Erreur lors du calcul : impossible d'effectuer le calcul. (Exception " + e + " )");
-            }
+            
 
         }
     }
