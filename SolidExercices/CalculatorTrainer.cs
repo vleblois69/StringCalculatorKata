@@ -4,12 +4,15 @@ namespace SolidExercices
 {
     public class CalculatorTrainer
     {
-        private static readonly OperationsGenerator _generator;
-        private readonly string[] _operations = _generator.Generate();
+        private static IOperationsRepository _generator;
+        private string[] _operations;
+        private Calculator _calculator;
 
-        public void Run()
+        public void Run(IOperationsRepository operationsRepository, Calculator calculator)
         {
-            var calculator = new Calculator();
+            _generator = operationsRepository;
+            _operations = _generator.Generate();
+            _calculator = calculator;
             foreach (var operation in _operations)
             {
                 try

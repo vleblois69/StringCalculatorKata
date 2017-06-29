@@ -49,8 +49,9 @@
   <ItemGroup>
     <Compile Include="Calculator.cs" />
     <Compile Include="CalculatorTrainer.cs" />
+    <Compile Include="IOperationsRepository.cs" />
     <Compile Include="Operations.cs" />
-    <Compile Include="G.cs" />
+    <Compile Include="GeneratedOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

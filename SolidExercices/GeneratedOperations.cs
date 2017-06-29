@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SolidExercices
 {
-    class OperationsGenerator
+    public class GeneratedOperations : IOperationsRepository
     {
         public string[] Generate()
         {
