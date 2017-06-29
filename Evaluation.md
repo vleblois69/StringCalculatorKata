@@ -21,7 +21,7 @@ Q1) Pour éviter de faire des if / else on peut créer un dictionnaire dont les 
 
 Q2)
 
-Q3)
+Q3) Le principe appliqué est celui de Responsabilité unique.
 
 Q4)
 
