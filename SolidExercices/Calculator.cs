@@ -7,7 +7,13 @@ namespace SolidExercices
     {
         public double Calculate(string operation)
         {
-            throw new NotImplementedException();
+            string[] chiffres = operation.Split('+');
+            double resultat = 0;
+            foreach (string chiffre in chiffres)
+            {
+                resultat += Convert.ToDouble(chiffre);
+            }
+            return resultat;
         }
     }
 }
