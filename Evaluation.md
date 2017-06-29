@@ -1,31 +1,31 @@
-Evaluation finale du cours .NET ‡ l'IUT Lyon 1
+Evaluation finale du cours .NET √† l'IUT Lyon 1
 ==============================================
 
-CritËres d'Èvaluation
+Crit√®res d'√©valuation
 ---------------------
 
-* Solution apportÈe aux problËmes posÈs dans le fichier Readme.md + rÈponses aux questions (‡ mettre dans le fichier ci-dessous)
-* La qualitÈ des commits : granularitÈ fine et commentaires explicites du pourquoi (et non du quoi, i.e ne pas dire quels fichiers ont ÈtÈ modifiÈs, c'est inutile, Git le dit dÈj‡)
-* La qualitÈ du code : utiliser un nommage correct + R# donne des rËgles ‡ respecter, il suffit de les corriger
-* Les tests unitaires : expressivitÈ (le nommage tout particuliËrement), granularitÈ (i.e on teste une chose ‡ la fois), rapiditÈ (i.e instantanÈ), couverture de code et indÈpendance (un test ne dÈpend pas des autres)
-* Le design du code : utiliser les pratiques vues en cours pour Èviter de faire du code difficilement maintenable et Èvolutif (SOLID...)
+* Solution apport√©e aux probl√®mes pos√©s dans le fichier Readme.md + r√©ponses aux questions (√† mettre dans le fichier ci-dessous)
+* La qualit√© des commits : granularit√© fine et commentaires explicites du pourquoi (et non du quoi, i.e ne pas dire quels fichiers ont √©t√© modifi√©s, c'est inutile, Git le dit d√©j√†)
+* La qualit√© du code : utiliser un nommage correct + R# donne des r√®gles √† respecter, il suffit de les corriger
+* Les tests unitaires : expressivit√© (le nommage tout particuli√®rement), granularit√© (i.e on teste une chose √† la fois), rapidit√© (i.e instantan√©), couverture de code et ind√©pendance (un test ne d√©pend pas des autres)
+* Le design du code : utiliser les pratiques vues en cours pour √©viter de faire du code difficilement maintenable et √©volutif (SOLID...)
 
-ATTENTION: ne pas changer le nommage des projets, des classes et mÈthodes donnÈs (sauf sur les tests si vous voulez).
+ATTENTION: ne pas changer le nommage des projets, des classes et m√©thodes donn√©s (sauf sur les tests si vous voulez).
 
-A LA FIN DU TP: pensez ‡ pousser vos commits sur votre compte GitHub et envoyer votre dÈpÙt ‡ mon adresse mail.
+A LA FIN DU TP: pensez √† pousser vos commits sur votre compte GitHub et envoyer votre d√©p√¥t √† mon adresse mail.
 
-RÈponses aux questions posÈes
+R√©ponses aux questions pos√©es
 -----------------------------
 
-Q1)
+Q1) Pour √©viter de faire des if / else on peut cr√©er un dictionnaire dont les cl√©s seraient les op√©rateurs (+,-,..) et les valeurs les fonctions √† √©xecuter. Il faut donc aussi cr√©er une fonction par op√©ration.
 
-Q2)
+Q2) Le concept coeur de la programmation orient√© objets utilis√© ici est l'utilisation de classes contenant des donn√©es et des m√©thodes, plutot que de tout avoir dans une seule classe.
 
-Q3)
+Q3) Le principe appliqu√© est celui de Responsabilit√© unique.
 
-Q4)
+Q4) Le probl√®me avec cette classe est que les op√©rations sont √©crites en dures, il n'y a donc pas de souplesse, on voudrait pouvoir tester n'importe quelle op√©ration.
 
-Q5)
+Q5) Le principe appliqu√© ici est celui de Responsabilit√© unique.
 
-Q6)
+Q6) Le principe appliqu√© est celui d'inversion de d√©pendances.
  
