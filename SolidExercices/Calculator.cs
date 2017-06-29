@@ -34,6 +34,15 @@ namespace SolidExercices
                     resultat *= Convert.ToDouble(chiffres[i]);
                 }
             }
+            else if (operation.Contains('/'))
+            {
+                string[] chiffres = operation.Split('/');
+                resultat = Convert.ToDouble(chiffres[0]);
+                for (int i = 1; i < chiffres.Length; i++)
+                {
+                    resultat /= Convert.ToDouble(chiffres[i]);
+                }
+            }
             return resultat;
         }
     }

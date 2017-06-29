@@ -28,5 +28,13 @@ namespace SolidExercices.Tests
             var result = calculator.Calculate("2*3,2");
             Check.That(result).IsEqualTo(6.4);
         }
+
+        [Test]
+        public void CalculateADivision()
+        {
+            var calculator = new Calculator();
+            var result = calculator.Calculate("6/3");
+            Check.That(result).IsEqualTo(2);
+        }
     }
 }
