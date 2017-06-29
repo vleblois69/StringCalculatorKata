@@ -5,43 +5,50 @@ namespace SolidExercices
 {
     public class Calculator
     {
-        public double Calculate(string operation)
+        public decimal Calculate(string operation)
         {
-            double resultat = 0;
-            if (operation.Contains('+'))
+            decimal resultat = 0;
+            try
             {
-                string[] chiffres = operation.Split('+');
-                foreach (string chiffre in chiffres)
+                if (operation.Contains('+'))
                 {
-                    resultat += Convert.ToDouble(chiffre);
+                    string[] chiffres = operation.Split('+');
+                    foreach (string chiffre in chiffres)
+                    {
+                        resultat += Convert.ToDecimal(chiffre);
+                    }
+                }
+                else if (operation.Contains('-'))
+                {
+                    string[] chiffres = operation.Split('-');
+                    resultat = Convert.ToDecimal(chiffres[0]);
+                    for (int i = 1; i < chiffres.Length; i++)
+                    {
+                        resultat -= Convert.ToDecimal(chiffres[i]);
+                    }
+                }
+                else if (operation.Contains('*'))
+                {
+                    string[] chiffres = operation.Split('*');
+                    resultat = Convert.ToDecimal(chiffres[0]);
+                    for (int i = 1; i < chiffres.Length; i++)
+                    {
+                        resultat *= Convert.ToDecimal(chiffres[i]);
+                    }
+                }
+                else if (operation.Contains('/'))
+                {
+                    string[] chiffres = operation.Split('/');
+                    resultat = Convert.ToDecimal(chiffres[0]);
+                    for (int i = 1; i < chiffres.Length; i++)
+                    {
+                        resultat /= Convert.ToDecimal(chiffres[i]);
+                    }
                 }
             }
-            else if (operation.Contains('-'))
+            catch (Exception e)
             {
-                string[] chiffres = operation.Split('-');
-                resultat = Convert.ToDouble(chiffres[0]);
-                for(int i = 1; i < chiffres.Length; i++)
-                {
-                    resultat -= Convert.ToDouble(chiffres[i]);
-                }
-            }
-            else if (operation.Contains('*'))
-            {
-                string[] chiffres = operation.Split('*');
-                resultat = Convert.ToDouble(chiffres[0]);
-                for (int i = 1; i < chiffres.Length; i++)
-                {
-                    resultat *= Convert.ToDouble(chiffres[i]);
-                }
-            }
-            else if (operation.Contains('/'))
-            {
-                string[] chiffres = operation.Split('/');
-                resultat = Convert.ToDouble(chiffres[0]);
-                for (int i = 1; i < chiffres.Length; i++)
-                {
-                    resultat /= Convert.ToDouble(chiffres[i]);
-                }
+                Console.WriteLine("Erreur lors du calcul : impossible d'effectuer le calcul. (Exception " + e + " )");
             }
             return resultat;
         }
