@@ -44,5 +44,19 @@ namespace SolidExercices.Tests
             var calculator = new Calculator();
             Check.ThatCode(() => calculator.Calculate("habd+kofjgk")).Throws<Exception>();
         }
+
+        [Test]
+        public void NotDivideByZero()
+        {
+            var calculator = new Calculator();
+            Check.ThatCode(() => calculator.Calculate("5/0")).Throws<Exception>();
+        }
+
+        [Test]
+        public void NotCalculateWithMultipleOperators()
+        {
+            var calculator = new Calculator();
+            Check.ThatCode(() => calculator.Calculate("12*3+6-4")).Throws<Exception>();
+        }
     }
 }
